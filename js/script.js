@@ -48,18 +48,18 @@ document.addEventListener('DOMContentLoaded', incrementStats);
 document.querySelector('#to-top').addEventListener('click', scrollToTop);
 
 
-// Activate the multi-item carousel
-// $('#multiItemCarousel').carousel({
-//   interval: 5000 // Adjust the interval as needed (in milliseconds)
-// });
+Activate the multi-item carousel
+$('#multiItemCarousel').carousel({
+  interval: 5000 // Adjust the interval as needed (in milliseconds)
+});
 
-// Enable carousel controls
-// $('.carousel-control-prev').click(function() {
-//   $('#multiItemCarousel').carousel('prev');
-// });
+Enable carousel controls
+$('.carousel-control-prev').click(function() {
+  $('#multiItemCarousel').carousel('prev');
+});
 
-// $('.carousel-control-next').click(function() {
-//   $('#multiItemCarousel').carousel('next');
-// });
+$('.carousel-control-next').click(function() {
+  $('#multiItemCarousel').carousel('next');
+});
 
 

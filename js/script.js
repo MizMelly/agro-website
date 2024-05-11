@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', incrementStats);
 document.querySelector('#to-top').addEventListener('click', scrollToTop);
 
 
-Activate the multi-item carousel
+// Activate the multi-item carousel
 $('#multiItemCarousel').carousel({
   interval: 5000 // Adjust the interval as needed (in milliseconds)
 });
 
-Enable carousel controls
+// Enable carousel controls
 $('.carousel-control-prev').click(function() {
   $('#multiItemCarousel').carousel('prev');
 });

@@ -13,53 +13,22 @@ function userScroll() {
   });
 }
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-function incrementStats() {
-  const counters = document.querySelectorAll('.counter');
-
-  counters.forEach((counter) => {
-    counter.innerText = 0;
-
-    const updateCounter = () => {
-      const target = +counter.getAttribute('data-target');
-      const c = +counter.innerText;
-
-      const increment = target / 200;
-
-      if (c < target) {
-        counter.innerText = Math.ceil(c + increment);
-        setTimeout(updateCounter, 1);
-      } else {
-        counter.innerText = target;
-      }
-    };
-
-    updateCounter();
-  });
-}
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);
 document.addEventListener('DOMContentLoaded', incrementStats);
 document.querySelector('#to-top').addEventListener('click', scrollToTop);
 
-
-// Activate the multi-item carousel
-$('#multiItemCarousel').carousel({
-  interval: 5000 // Adjust the interval as needed (in milliseconds)
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4, // Display 4 slides at a time
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-
-// Enable carousel controls
-$('.carousel-control-prev').click(function() {
-  $('#multiItemCarousel').carousel('prev');
-});
-
-$('.carousel-control-next').click(function() {
-  $('#multiItemCarousel').carousel('next');
-});
-
-

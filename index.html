@@ -236,64 +236,41 @@
   </section>
 
   <!--Agro Event-->
-  <section class="bg-secondary py-5">
+  <section id="agro-section" class="bg-secondary py-5">
     <div class="container">
       <h5 class="card-title text-light mb-4 text-center">
         Agro-Events Caption
       </h5>
-      <div class="carousel-container">
-      <!-- Main slider carousel -->
-      <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators" data-bs-target="#multiItemCarousel">
-          <li data-bs-slide-to="0" class="active"></li>
-          <li data-bs-slide-to="1"></li>
-          <li data-bs-slide-to="2"></li>
-          <li data-bs-slide-to="3"></li>
-          <li data-bs-slide-to="4"></li>
-          <li data-bs-slide-to="5"></li>
-        </ol>
-      
-        <!-- <div class="carousel-inner"> -->
-          <div class="carousel-item active">
-          </div>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid px-3" alt="Slide 1" />
-              </div>
-            <div class="col-md-3">
-              <img src="images/countryside-workers-out-field.png" class="image-fluid px-2" alt="Slide 2" />
-            </div>
-          <div class="col-md-2">
-            <img src="images/elegant-woman-with-serious-face-pointing-towards-front.png" class="image-fluid" alt="Slide 3" />
-          </div>
-        
-        <div class="col-md-2">
-          <img src="images/countryside-woman-working-field.png" class="image-fluid" alt="Slide 4" />
-        </div>
-      
-      <div class="col-md-2">
-        <img src="images/happy-african-man-trimming-bushes-with-gas-powered-clipper.png" class="image-fluid px-3" alt="Slide 5" />
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- Navigation controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+        centered-slides="true" space-between="30" grab-cursor="true">
+        <swiper-slide>
+          <img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid"
+            alt="Slide 1" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/countryside-workers-out-field.png" class="image-fluid"
+            alt="Slide 2" />
+        </swiper-slide>
+        <swiper-slide><img src="images/elegant-woman-with-serious-face-pointing-towards-front.png" class="image-fluid"
+            alt="Slide 3" /></swiper-slide>
+        <swiper-slide><img src="images/countryside-woman-working-field.png" class="image-fluid"
+            alt="Slide 4" /></swiper-slide>
+        <swiper-slide><img src="images/happy-african-man-trimming-bushes-with-gas-powered-clipper.png" class="image-fluid"
+            alt="Slide 5" /></swiper-slide>
+        <swiper-slide><img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid"
+            alt="Slide 6" /></swiper-slide>
+        <swiper-slide><img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid"
+            alt="Slide 7" /></swiper-slide>
+        <swiper-slide><img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid"
+            alt="Slide 8" /></swiper-slide>
+        <swiper-slide><img src="images/portrait-cheerful-african-man-pruning-hedge-with-trimmer.png" class="image-fluid"
+            alt="Slide 9" /></swiper-slide>
+      </swiper-container>
     </div>
   </section>
 
   <!--Agro programms-->
-  <section class="py-2 custom-bg-color text-light">
+  <section class="py-5 custom-bg-color text-light">
     <div class="container">
       <div class="text-center mb-5 pt-5">
         <p class="lead text-light">AGRO-PROGRAMMES</p>
@@ -301,9 +278,9 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <img src="images/Frame 33417.png" alt="" class="img-fluid" />
+          <img src="images/Frame 33417.png" alt="" class="img-fluid rounded-0 mb-4">
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center text-light">
+        <div class="col-lg-6 d-flex flex-column justify-content-center text-light py-4">
           <h2 class="text-light">
             Programme to enhance better management of agricultural and rural
             sector in Nigeria
@@ -334,121 +311,115 @@
           </h1>
         </div>
       </div>
-      <div id="carouselExampleControls" class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33402.png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">"i've been sourcing my agricultural supplies from AFCF
-                  for years, and they never<a href="#" class="yellow-text"> ...read more</a>
-                </p>
-                <h6>John Teniola<br> - Farmer</h6>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33400 (1).png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+        centered-slides="true" space-between="30" grab-cursor="true">
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (1).png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
 
-                <p class="card-text">"AFCF is my go-to supplier for fresh, locally sourced produce.
-                  Their<a href="#" class="yellow-text"> ...read more</a>
-                </p>
-                <h6>SARAH Johnson.<br> - Local Produce Retailer</h6>
-              </div>
+              <p class="card-text">"AFCF is my go-to supplier for fresh, locally sourced produce.
+                Their<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>SARAH Johnson.<br> - Local Produce Retailer</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <p class="card-text">"i've been gardening for years, and AFCF has been
-                  my trusted ally. Their diverse<a href="#" class="yellow-text"> ...read more</a>
-                </p>
-                <h6>NELSON Pelumi<br> - Home Gardener</h6>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <p class="card-text">"i've been gardening for years, and AFCF has been
+                my trusted ally. Their diverse<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>NELSON Pelumi<br> - Home Gardener</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33400.png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 4</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33402.png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">"i've been sourcing my agricultural supplies from AFCF
+                for years, and they never<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>John Teniola<br> - Farmer</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33400 (1).png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 5</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100 " alt="..."> </div>
+            <div class="card-body">
+
+              <p class="card-text">"AFCF is my go-to supplier for fresh, locally sourced produce.
+                Their<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>SARAH Johnson.<br> - Local Produce Retailer</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 6</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <p class="card-text">"i've been gardening for years, and AFCF has been
+                my trusted ally. Their diverse<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>NELSON Pelumi<br> - Home Gardener</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 7</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33402.png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">"i've been sourcing my agricultural supplies from AFCF
+                for years, and they never<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>John Teniola<br> - Farmer</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 8</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (1).png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+
+              <p class="card-text">"AFCF is my go-to supplier for fresh, locally sourced produce.
+                Their<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>SARAH Johnson.<br> - Local Produce Retailer</h6>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 9</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33400 (2).png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <p class="card-text">"i've been gardening for years, and AFCF has been
+                my trusted ally. Their diverse<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>NELSON Pelumi<br> - Home Gardener</h6>
             </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-wrapper"><img src="images/Frame 33402.png" class="d-block w-100" alt="..."> </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">"i've been sourcing my agricultural supplies from AFCF
+                for years, and they never<a href="#" class="yellow-text"> ...read more</a>
+              </p>
+              <h6>John Teniola<br> - Farmer</h6>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
   </section>
 
   <!--Connect-->
@@ -709,6 +680,7 @@
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
